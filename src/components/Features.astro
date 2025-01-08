@@ -1,0 +1,33 @@
+---
+const features = [
+  {
+    title: "Interacción en Tiempo Real",
+    description: "Consulta resultados y estadísticas con preguntas naturales."
+  },
+  {
+    title: "Integración Sencilla",
+    description: "Compatible con las principales bases de datos y plataformas de cronometraje."
+  },
+  {
+    title: "Ahorro de Tiempo",
+    description: "Respuestas instantáneas, sin búsquedas manuales."
+  },
+  {
+    title: "Personalización",
+    description: "Adapta el chatbot a las necesidades específicas de tu evento."
+  }
+];
+---
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Características Principales</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {features.map(feature => (
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-3">{feature.title}</h3>
+          <p class="text-gray-600">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

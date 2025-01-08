@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import Benefits from '../components/Benefits.astro';
+import CTA from '../components/CTA.astro';
+---
+
+<Layout title="Race Query - Revoluciona tus Carreras">
+  <main>
+    <Hero />
+    <div class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Transforma la Forma en que Presentas los Resultados</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-8">
+          Olvídate de las hojas de cálculo complicadas y las búsquedas interminables. Race Query permite a tus participantes, espectadores y organizadores interactuar directamente con la base de datos de la carrera para encontrar información al instante.
+        </p>
+        <div class="max-w-2xl mx-auto bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold mb-4">Consulta cualquier dato en segundos:</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-600">
+            <li>Resultados por categoría.</li>
+            <li>Tiempo individual de cada corredor.</li>
+            <li>Estadísticas globales del evento.</li>
+            <li>Y mucho más.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <Features />
+    <Benefits />
+    <CTA />
+  </main>
+</Layout>

@@ -1,0 +1,33 @@
+---
+const benefits = [
+  {
+    icon: "🚀",
+    title: "Innovación",
+    description: "Deja atrás las tablas estáticas y sorprende a tus usuarios con una experiencia interactiva."
+  },
+  {
+    icon: "⏱️",
+    title: "Eficiencia",
+    description: "Resultados rápidos y precisos al alcance de todos."
+  },
+  {
+    icon: "💡",
+    title: "Valor Añadido",
+    description: "Aumenta la satisfacción y fidelidad de tus clientes y participantes."
+  }
+];
+---
+<section class="py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">¿Por Qué Elegir Race Query?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      {benefits.map(benefit => (
+        <div class="text-center">
+          <div class="text-4xl mb-4">{benefit.icon}</div>
+          <h3 class="text-xl font-bold mb-3">{benefit.title}</h3>
+          <p class="text-gray-600">{benefit.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
